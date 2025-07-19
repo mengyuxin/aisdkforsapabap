@@ -202,7 +202,7 @@ CLASS zcl_peng_azoai_sdk_v1 IMPLEMENTATION.
 * Apr 5, 2023 // Gopal Nair // Initial Version
 *****************************************************************************************************************
     _check_component_safety( component_type = zif_peng_azoai_sdk_constants=>c_component_type-file ).
-    files ?= _t_subcomponents[ component_type = zif_peng_azoai_sdk_constants=>c_component_type-file ]-component_instance..
+    files ?= _t_subcomponents[ component_type = zif_peng_azoai_sdk_constants=>c_component_type-file ]-component_instance.
   ENDMETHOD.
 
   METHOD zif_peng_azoai_sdk~finetunes.
@@ -235,7 +235,7 @@ CLASS zcl_peng_azoai_sdk_v1 IMPLEMENTATION.
 * Apr 5, 2023 // Gopal Nair // Initial Version
 *****************************************************************************************************************
     _check_component_safety( component_type = zif_peng_azoai_sdk_constants=>c_component_type-fine_tuning ).
-    finetunes ?= _t_subcomponents[ component_type = zif_peng_azoai_sdk_constants=>c_component_type-fine_tuning ]-component_instance..
+    finetunes ?= _t_subcomponents[ component_type = zif_peng_azoai_sdk_constants=>c_component_type-fine_tuning ]-component_instance.
   ENDMETHOD.
 
   METHOD zif_peng_azoai_sdk~chat_completions.
